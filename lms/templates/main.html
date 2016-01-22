@@ -68,6 +68,9 @@ from branding import api as branding_api
   %>
   <link rel="stylesheet" href="${static.url(application_css_path)}" type="text/css" media="all" />
 
+  <%block name="js_overrides">
+  </%block>
+
   % if disable_courseware_js:
     <%static:js group='base_vendor'/>
     <%static:js group='base_application'/>
